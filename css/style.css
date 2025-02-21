@@ -1,0 +1,89 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Navigation */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Search Section */
+.search-section {
+    background-color: #f8f9fa;
+}
+
+.search-filters {
+    border: 1px solid #e9ecef;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-filters:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Map Section */
+#map {
+    border: 1px solid #dee2e6;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Property List */
+.property-list {
+    scrollbar-width: thin;
+    scrollbar-color: #6c757d #f8f9fa;
+}
+
+.property-card {
+    border: 1px solid #dee2e6;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 1rem;
+}
+
+.property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.property-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.property-card .card-body {
+    padding: 1.25rem;
+}
+
+.property-card .price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.property-card .features {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Footer */
+footer a {
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #0d6efd !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-filters .row > div {
+        margin-bottom: 1rem;
+    }
+    
+    .property-card img {
+        height: 150px;
+    }
+}
